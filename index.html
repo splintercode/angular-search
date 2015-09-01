@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <title>Search Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Resources -->
+    <link href="Build/Css/all.css?v=1.2.3" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!--<base href="/">-->
+</head>
+<body data-ng-controller="BaseSearchCtrl as baseSearchCtrl">
+    <header>
+        <a href="#/" class="logo">Search Dashboard</a>
+        <button class="menu-btn" data-ng-init="showNav = false" data-ng-click="showNav = !showNav"><i class="icon-menu"></i></button>
+    </header>
+    <nav class="nav" data-ng-show="showNav" data-ng-click="showNav = false">
+        <a class="nav__a--red" href="#/">Web</a>
+        <a class="nav__a--blue" href="#/images">Image</a>
+        <a class="nav__a--green" href="#/video">Video</a>
+        <a class="nav__a--yellow" href="#/news">News</a>
+        <a class="nav__a--purple" href="#/about">About</a>
+    </nav>
+    <main data-ng-view class="reveal-animation">
+
+    </main>
+    <footer></footer>
+    <script id="Bundle" src="Build/Js/all.js?v=1.2.4" async></script>
+</body>
+</html>

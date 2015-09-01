@@ -1,0 +1,13 @@
+﻿<h1 class="heading--yellow">News Search</h1>
+<div class="main-content">
+    <section class="row">
+        <div class="col-12-md">
+            <search-input value="baseSearchCtrl.query" ng-model="baseSearchCtrl.results" class="search-form--yellow"></search-input>
+        </div>
+    </section>
+    <section class="row">
+        <div class="col-12-md">
+            <search-results-news ng-model="baseSearchCtrl.results.News"></search-results-news>
+        </div>
+    </section>
+</div>

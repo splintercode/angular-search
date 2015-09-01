@@ -1,0 +1,22 @@
+﻿main {
+    padding-top: 64px;
+    float: left;
+    display: block;
+    width: 100%;
+
+    @include respond-min($lg-break) {
+        padding-left: 268px;
+    }
+}
+
+.main-content {
+    padding: 10px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    animation: fadein 1s;
+
+        @include respond-min($lg-break) {
+        padding-left: 268px;
+        padding: 24px;
+    }
+}
